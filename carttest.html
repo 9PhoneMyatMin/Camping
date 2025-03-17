@@ -1,0 +1,64 @@
+<!-- Example for Product Card 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap/css/index.css">
+    <link rel="stylesheet" href="bootstrap/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.js" defer></script>
+</head>
+<body>
+    <!-- Example for Product Card 1 -->
+<div class="col-md-3 mb-3">
+    <div class="card bg-light">
+        <img src="img/tent1.jpg" class="card-img-top" alt="4 men tent">
+        <div class="card-body">
+            <h5 class="card-title text-center">Sunny Beginner Hiking Tent - White / Sunny 3</h5>
+            <h5 class="card-text text-success mt-3"><strong>Price:</strong> $360</h5><br>
+            <a href="cart.html" class="btn btn-custom w-100" 
+               onclick="addToCart(event, 'tent1', 'Sunny Beginner Hiking Tent - White / Sunny 3', 360, 'img/tent1.jpg')">Add to Cart</a>
+        </div>
+    </div>
+</div>
+<script>
+    // Function to add product to cart
+    function addToCart(event, id, name, price, image) {
+        // Prevent the default behavior of the <a> tag
+        event.preventDefault();
+
+        // Create a product object
+        const product = {
+            id: id,
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1 // Default quantity
+        };
+
+        // Retrieve existing cart items from localStorage
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        // Check if the product is already in the cart
+        const existingProduct = cart.find(item => item.id === id);
+        if (existingProduct) {
+            // If the product exists, increase its quantity
+            existingProduct.quantity += 1;
+        } else {
+            // If the product doesn't exist, add it to the cart
+            cart.push(product);
+        }
+
+        // Save the updated cart back to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        // Redirect to the cart page
+        window.location.href = 'cartpage.html';
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        .hero {
+            background: url('images/hero-bg.jpg') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+        }
+        .services {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+        .contact {
+            padding: 60px 0;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffeb3b !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <!DOCTYPE html>
+    < lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign In/Sign Up Modal</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <>
+        <nav class="navbar bg-dark navbar-expand-md fixed-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">App</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#carts">Carts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                        <!-- <li class="nav-item"><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signInModal">Sign In</button></li>
+                        <li class="nav-item"><button class="btn btn-secondary ms-2" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button></li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Sign In Modal -->
+        <div class="modal fade" id="signInModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign In</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="signInEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="signInEmail">
+                            </div>
+                            <div class="mb-3">
+                                <label for="signInPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signInPassword">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Sign Up Modal -->
+        <div class="modal fade" id="signUpModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign Up</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="signUpEmail" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="signUpEmail">
+                            </div>
+                            <div class="mb-3">
+                                <label for="signUpPassword" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="signUpPassword">
+                            </div>
+                            <div class="mb-3">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirmPassword">
+                            </div>
+                            <button type="submit" class="btn btn-secondary w-100">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <div class="container">
+            <h1>Welcome to My Website</h1>
+            <p class="lead">A simple and modern Bootstrap 5 homepage</p>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p class="lead">This is a sample Bootstrap 5 homepage template designed for simplicity and responsiveness.</p>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="services text-center">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>Web Design</h4>
+                        <p>Modern and responsive web designs tailored for your needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>Development</h4>
+                        <p>Custom web applications built with the latest technologies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>SEO Optimization</h4>
+                        <p>Improve your website's visibility and reach a larger audience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="lead">Have questions? Get in touch with us.</p>
+            <form class="mt-4">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md-4 mb-3">
+                    <h5>About Us</h5>
+                    <p>We are a company dedicated to providing quality services and products to our customers.</p>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="text-light mx-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light mx-2"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p class="mb-0">&copy; 2025 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+   
+</body>
+</html>
